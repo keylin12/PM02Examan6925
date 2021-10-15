@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PM02Examan6925.Views.MainPage">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Ubicacion Salvada"
+                     Clicked="toolbar01_Clicked"
+                     x:Name="toolbar01"></ToolbarItem>
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <StackLayout>
+
+            <Label Text="Latitud actual"></Label>
+            <Entry x:Name="txtlatitud" Keyboard="Text"></Entry>
+
+            <Label Text="Longitud actual"></Label>
+            <Entry x:Name="txtlongitud" Keyboard="Text"></Entry>
+
+            <Label Text="Descripcion la ubicacion"></Label>
+            <Entry x:Name="txtdescripcion" Keyboard="Text"></Entry>
+
+            <Label Text="Descripcion Corta"></Label>
+            <Entry x:Name="txtdescripcioncorta" Keyboard="Text"></Entry>
+
+            <Button Text="Guardar Ubicacion" x:Name="btnGuardarubicacion" Clicked="btnGuardarubicacion_Clicked"></Button>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

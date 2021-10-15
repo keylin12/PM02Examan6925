@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PM02Examan6925.Views.UpdatePage">
+
+
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Label Text="id" Grid.Row="0"  Grid.Column="0"></Label>
+                <Entry x:Name="txtid" Keyboard="Numeric" Grid.Row="0"  Grid.Column="1" Text="{Binding id}"></Entry>
+
+                <Label Text="Latitud actual" Grid.Row="1"  Grid.Column="0"></Label>
+                <Entry x:Name="txtlatitud" Keyboard="Numeric" Grid.Row="1"  Grid.Column="1" Text="{Binding latitud}"></Entry>
+
+                <Label Text="Longitud actual" Grid.Row="2"  Grid.Column="0"></Label>
+                <Entry x:Name="txtlongitud" Keyboard="Numeric" Grid.Row="2"  Grid.Column="1" Text="{Binding longiud}"></Entry>
+
+                <Label Text="Descripcion la ubicacion" Grid.Row="3"  Grid.Column="0"></Label>
+                <Entry x:Name="txtdescripcion" Keyboard="Text" Grid.Row="3"  Grid.Column="1" Text="{Binding descripcion}"></Entry>
+
+                <Label Text="Descripcion Corta" Grid.Row="4"  Grid.Column="0"></Label>
+                <Entry x:Name="txtdescripcioncorta" Keyboard="Text" Grid.Row="4"  Grid.Column="1" Text="{Binding descripcioncorta}"></Entry>
+
+                <Button Text="Modificar" x:Name="Modificar" Clicked="Modificar_Clicked" Grid.Row="6"  Grid.Column="0" ></Button>
+                <Button Text="Eliminar" x:Name="Eliminar" Clicked="Eliminar_Clicked"  Grid.Row="6"  Grid.Column="1"></Button>
+                <Button Text="GPS" x:Name="gps" Clicked="gps_Clicked" Grid.Row="7"  Grid.Column="0"></Button>
+
+            </Grid>
+            
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
